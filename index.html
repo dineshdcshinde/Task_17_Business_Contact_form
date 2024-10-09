@@ -6,9 +6,9 @@
     <title>Business | Contact Form</title>
     <link rel="stylesheet" href="style.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="wrapper">
@@ -43,36 +43,91 @@
       <!-- get in touch -->
       <section class="get-in-touch">
         <h2>Get in touch</h2>
-        
+
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
           accusamus sunt ad, ea veritatis.
         </p>
 
-        <div class="addr">
+        <!--  address-->
+        <div class="address">
           <!-- left one -->
-          <div class="left-addr">
+          <div class="left-one">
             <div class="item">
               <i class="ri-map-pin-2-line"></i>
-              <h3>Head Office</h3>
-              <p>Jalan Cempaka Wangi No 22 Jakarta - Indonesia</p>
+              <div class="item-desc">
+                <h3>Head Office</h3>
+                <p>
+                  Jalan Cempaka Wangi No 22 <br />
+                  Jakarta - Indonesia
+                </p>
+              </div>
             </div>
 
             <div class="item">
               <i class="ri-mail-line"></i>
-              <h3>Email us</h3>
-              <p>support@yourdomain.tld hello@yourdomain.tld</p>
+              <div class="item-desc">
+                <h3>Email us</h3>
+                <p>
+                  hello@yourdomain.tld<br />
+                  support@yourdomain.tld
+                </p>
+              </div>
             </div>
 
             <div class="item">
-              <i class="ri-customer-service-2-line"></i>
-              <h3>Call us</h3>
-              <p>Phone : +6221.2002.2012 Fax : +6221.2002.2013</p>
+              <i class="ri-map-pin-2-line"></i>
+              <div class="item-desc">
+                <h3>Call us</h3>
+                <p>
+                  Fax : +6221.2002.2013 <br />
+                  Phone : +6221.2002.2012
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- right one  -->
-          <div class="left-addr"></div>
+          <!-- right one -->
+          <div class="right-one">
+            <img
+              src="./assets/photos/office-building-in-spring-right.jpg"
+              alt="office"
+            />
+            <img src="./assets/photos/google-spam-right.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- contact form  -->
+      <section class="contact-form">
+        <div class="overlay-form"></div>
+        <div class="main-form">
+          <form action="">
+            <div id="half">
+              <input type="text" placeholder="Name" id="name" />
+
+              <input type="text" placeholder="Company" id="company" />
+            </div>
+
+            <div class="phone-email">
+              <input
+                type="tel"
+                name=""
+                id="tel"
+                placeholder="Phone"
+                class="half"
+              />
+
+              <input type="email" placeholder="Email" id="email" class="half" />
+            </div>
+
+            <input type="text" placeholder="Subject" id="sub" />
+
+            <textarea name="message" id="" placeholder="Message"></textarea>
+            <button>
+              <i class="ri-mail-send-line"></i>
+              Send Message</button>
+          </form>
         </div>
       </section>
     </section>
